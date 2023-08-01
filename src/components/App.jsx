@@ -84,7 +84,7 @@ class App extends Component {
         <Form onInput={this.handleInputChange} />
 
         <h2>Contacts</h2>
-        <section>
+        <section className={ css.sectionStyle}>
           <Filter onSearch={this.handleSearch} value={this.state.filter} />
           <ContactList
             contacts={filterContacts}
